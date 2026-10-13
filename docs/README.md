@@ -1,0 +1,1 @@
+Static browser demo. Open index.html through a static server. Models are validated against reference-fixtures.json with node --test models.test.cjs. Satellite.js is MIT-licensed; see vendor/satellite-LICENSE.md.
