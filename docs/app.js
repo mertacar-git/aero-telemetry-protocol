@@ -15,6 +15,7 @@ const sampleTLE='ISS (synthetic historical example)\n1 25544U 98067A   24001.500
 for(const [key,p] of Object.entries(projects)){const a=document.createElement('a');a.href='?project='+key;a.className=key===current?'active':'';a.innerHTML='<small>'+p.category.slice(0,2)+'</small><span>'+p.title+'</span>';$('directory').append(a);}
 $('category').textContent=config.category;$('title').textContent=config.title;$('description').textContent=config.description;$('model-notes').textContent=config.notes;document.title=config.title+' — Mert Açar';
 $('source').href=$('local-app').href='https://github.com/mertacar-git/'+current;
+$('video').href='https://mertacar-git.github.io/'+current+'/demo.mp4';
 function field(id,label,value,min,max,step){const l=document.createElement('label'),span=document.createElement('span'),input=document.createElement('input');span.textContent=label;input.type='number';Object.assign(input,{id,value,min,max,step,required:true});l.append(span,input);$('controls').append(l);}
 for(const f of config.fields)field(...f);
 function textField(id,label,value){const l=document.createElement('label'),s=document.createElement('span'),t=document.createElement('textarea');s.textContent=label;t.id=id;t.value=value;l.append(s,t);$('aux-controls').append(l);return t;}

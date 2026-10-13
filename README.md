@@ -9,6 +9,8 @@
 
 </details>
 
+[Short demo video](docs/demo.mp4) — a timed walkthrough of actual default and changed-parameter screenshots.
+
 ## Browser and local editions
 
 The public browser demo runs JavaScript models on-device. The local application uses Python and Streamlit. JavaScript numerical/protocol outputs are checked against committed Python reference fixtures. Satellite.js 6.0.1 is bundled with its license; no runtime CDN is required. Uploaded CSV data is processed locally in the browser.
